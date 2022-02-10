@@ -1,19 +1,29 @@
 {
-  "name": "hello-next",
+  "name": "todayscoin",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev -p 8000",
-    "build":"next build",
-    "start": "next start"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "nodemon app"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbs1621/TodaysCoin.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sbs1621/TodaysCoin/issues"
+  },
+  "homepage": "https://github.com/sbs1621/TodaysCoin#readme",
   "dependencies": {
-    "next": "^12.0.10",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "cookie-parser": "^1.4.6",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
