@@ -24,6 +24,7 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "sass-loader": "^7.1.0"
   }
 }
