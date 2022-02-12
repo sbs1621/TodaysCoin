@@ -8,6 +8,9 @@ class TodaysCoin extends PureComponent {
     return(
           <div class="container">
             <Header />
+            <div>
+              본문
+            </div>
           </div>
     );
   }
