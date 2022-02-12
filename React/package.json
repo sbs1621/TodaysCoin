@@ -1,5 +1,5 @@
 {
-  "name": "React",
+  "name": "todayscoin",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -60,7 +60,7 @@
     "node-sass": "^4.13.0",
     "react-with-styles-interface-aphrodite": "^5.0.1",
     "redux-devtools-extension": "^2.13.8",
-    "sass-loader": "^8.8.0",
+    "sass-loader": "^8.0.0",
     "storybook-addon-jsx": "^7.1.13"
   }
 }
