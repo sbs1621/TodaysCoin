@@ -1,13 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import './index.css';
-// import App from './App';
-import CoinApp from './test/CoinApp';
-import './doit-ui/app.css';
+import TodaysCoin from './test/TodaysCoin';
 // import CoinApp from './03/TodoList';
 //import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<CoinApp />, document.getElementById('root'));
+ReactDOM.render(<TodaysCoin />, document.getElementById('root'));
 // ReactDOM.render(<CoinApp />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
