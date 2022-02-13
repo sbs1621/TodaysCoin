@@ -1,10 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import TodaysCoin from './test/TodaysCoin';
-// import CoinApp from './03/TodoList';
-//import * as serviceWorker from './serviceWorker';
+import { Grommet } from 'grommet';
 
-ReactDOM.render(<TodaysCoin />, document.getElementById('root'));
+
+
+ReactDOM.render(
+    <React.StrictMode>
+        <Grommet plain>
+            <TodaysCoin />
+        </Grommet>
+    </React.StrictMode>,
+    document.getElementById('root')
+);
+
 // ReactDOM.render(<CoinApp />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

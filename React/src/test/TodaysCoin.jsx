@@ -1,17 +1,15 @@
 import React, { Component, PureComponent } from 'react';
-import Header from './header';
-import "bootstrap/dist/css/bootstrap.css";
-
+//import Header from './header';
+import { Anchor, Footer, Grommet, Main, Text, Box, Avatar, Button, Header, Menu, Heading } from 'grommet';
 
 class TodaysCoin extends PureComponent {
   render() {
-    return(
-          <div class="container">
-            <Header />
-            <div>
-              본문
-            </div>
-          </div>
+    return (
+      <Grommet full>
+        <Header background="active" pad="medium">
+          Todays Coin
+        </Header>
+      </Grommet>
     );
   }
 }
