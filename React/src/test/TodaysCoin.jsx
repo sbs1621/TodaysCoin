@@ -1,17 +1,25 @@
 import React, { Component, PureComponent } from 'react';
-//import Header from './header';
 import { Anchor, Footer, Grommet, Main, Text, Box, Avatar, Button, Header, Menu, Heading } from 'grommet';
+import MainHeader from './header';
+import MainBody from './body';
+import Mainfooter from './footer';
 
 class TodaysCoin extends PureComponent {
   render() {
     return (
       <Grommet full>
-        <Header background="active" pad="medium">
-          Todays Coin
-        </Header>
+        <MainHeader />
+        <MainBody />
+        <Mainfooter />
       </Grommet>
     );
   }
 }
+
+
+
+
+
+
 
 export default TodaysCoin;

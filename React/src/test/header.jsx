@@ -1,17 +1,15 @@
 import React, { Component, PureComponent } from 'react';
-import { Header, Button } from 'grommet';
+import { Anchor, Footer, Grommet, Main, Text, Box, Avatar, Button, Header, Menu, Heading } from 'grommet';
 
-
-class Header extends PureComponent {
+class MainHeader extends PureComponent {
 
     render() {
         return (
-            <Header background="brand">
-                <Button icon={<Icons.Home />} hoverIndicator />
-                <Menu label="account" items={[{ label: 'logout' }]} />
+            <Header background="active" pad="medium">
+                Todays Coin
             </Header>
         );
     }
 }
 
-export default Header;
+export default MainHeader;
