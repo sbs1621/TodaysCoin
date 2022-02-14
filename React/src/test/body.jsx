@@ -1,5 +1,6 @@
 import React, { Component, PureComponent } from 'react';
-import { Anchor, Footer, Grommet, Main, Text, Box, Avatar, Button, Header, Menu, Heading } from 'grommet';
+import { Anchor, Footer, Card, CardHeader, CardBody, CardFooter, Grommet, Main, Text, Box, Avatar, Button, background, Header, Menu, Heading, Image, texture } from 'grommet';
+import { Link } from 'grommet-icons';
 
 class MainBody extends PureComponent {
 
@@ -9,8 +10,70 @@ class MainBody extends PureComponent {
                 direction="row"
                 border={{ color: 'black', size: 'xsmall' }}
                 pad="small"
+                justify="center"
             >
-                main Content <br></br>
+                <Box
+                    direction="row"
+                    border={{ color: 'black', size: 'xsmall' }}
+                    pad="small"
+                    justify="center"
+                    width="80%"
+                    height="50%"
+                    round="medium"
+                >
+                    헬로
+
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    헬로
+                </Box>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
                 <br></br>
                 <br></br>
                 <br></br>
@@ -38,5 +101,7 @@ class MainBody extends PureComponent {
         );
     }
 }
+
+
 
 export default MainBody;
