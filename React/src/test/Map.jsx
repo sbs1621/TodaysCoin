@@ -1,29 +1,25 @@
 /* global kakao */
-import React, { useEffect } from "react";
-import cn from "classnames";
-import "../styles/Map.scss";
+import { Box } from 'grommet';
+import React, { useEffect } from 'react'
 
-const { kakao } = window;
 
-const Map = () => {
+const Location = () => {
+
   useEffect(() => {
-    let container = document.getElementById("map");
-
-    let options = {
-      center: new window.kakao.maps.LatLng(35.85133, 127.734086),
-      level: 13,
+    var container = document.getElementById('map');
+    var options = {
+      center: new kakao.maps.LatLng(37.365264512305174, 127.10676860117488),
+      level: 3
     };
+    var map = new kakao.maps.Map(container, options);
+  }, [])
 
-    let map = new window.kakao.maps.Map(container, options);
-
-    console.log("loading kakaomap");
-  }, []);
 
   return (
-    <div className={cn("Map")}>
-      <div className={cn("MapContainer")} id="map"></div>
-    </div>
-  );
-};
+    <Box>
+      <div id="map" style={{ width: "300px", height: "300px" }}></div>
+    </Box>
+  )
+}
 
-export default Map;
+export default Location;

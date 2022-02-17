@@ -1,3 +1,5 @@
 .MainBackground{
     background-image: './background.png';
+    background-size:auto;
+
 }

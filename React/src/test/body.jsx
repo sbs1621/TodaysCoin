@@ -26,6 +26,7 @@ import {
 import { property, type, opacity, thickness, point } from "grommet";
 import { Cpu, Link, Reddit, TextAlignFull } from "grommet-icons";
 import "./css/style.css";
+import Location from "./Map";
 
 const allItems = Array(30)
   .fill()
@@ -56,15 +57,12 @@ class MainBody extends PureComponent {
         >
           <h1>
             가장 신뢰받는 글로벌 표준 디지털 자산 거래소
-            <script
-              type="text/javascript"
-              src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8b5afc0236ca60d5812094d81bbbadc8"
-            ></script>
           </h1>
           <span>
             안전하고 투명한 시스템으로 빠르고 편리한 거래 환경을 제공합니다
           </span>
           <div>
+            <Location />
             <span>수온 api</span>
           </div>
         </Box>
@@ -129,6 +127,7 @@ class MainBody extends PureComponent {
               background={{ color: "#ffffff" }}
               xIndex={1}
             >
+
               <Text>비트코인</Text>
             </Box>
             <Box
