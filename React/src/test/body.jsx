@@ -1,25 +1,9 @@
-import React, { Component, PureComponent } from "react";
+import React, { Component, PureComponent, useEffect } from "react";
+import axios from 'axios';
 import {
-  Anchor,
-  Footer,
-  Card,
-  CardHeader,
   round,
-  CardBody,
-  CardFooter,
-  Grommet,
-  Main,
   Text,
   Box,
-  Avatar,
-  Button,
-  background,
-  Header,
-  Menu,
-  Heading,
-  Image,
-  texture,
-  InfiniteScroll,
   DataChart,
   Grid,
 } from "grommet";
@@ -28,17 +12,49 @@ import { Cpu, Link, Reddit, TextAlignFull } from "grommet-icons";
 import "./css/style.css";
 import Location from "./Map";
 
-const allItems = Array(30)
-  .fill()
-  .map((_, i) => "item${i+1}");
 
-class MainBody extends PureComponent {
+class MainBody extends React.Component {
+
+    options = {
+        url: 'https://api.upbit.com/v1/ticker',
+        params:{markets: 'KRW-BTC'},
+        headers: {Accept: 'application/json'}
+    };
+
+    state = {
+        isLoading: true,
+        MARKETDATA: '',
+    };
+
+    getcoin = async () => {
+        await axios.request(this.options).then(({ data }) => {
+            console.log(data[0]);
+            this.setState({
+                MARKETDATA: data[0],
+            });
+            
+            console.log(data);
+          }).catch(function (error) {
+            console.error(error);
+          });
+        this.setState({
+            isLoading: false,
+        });
+        console.log("loading closed.");
+    };
+
+    componentDidMount() {
+        this.getcoin();
+    }
+
+
   render() {
     const data = [
       { date: "2020-08-20", amount: 2 },
       { date: "2020-08-21", amount: 47 },
       { date: "2020-08-22", amount: 33 },
     ];
+    const { isLoading, MARKETDATA } = this.state;
     return (
       <Box>
         <Box
@@ -129,6 +145,9 @@ class MainBody extends PureComponent {
             >
 
               <Text>비트코인</Text>
+              {
+                isLoading?<h1>Loading...</h1>:<Text>{MARKETDATA.opening_price}</Text>
+              }
             </Box>
             <Box
               gridArea="coin4"
@@ -139,7 +158,7 @@ class MainBody extends PureComponent {
               background={{ color: "#ffffff" }}
               xIndex={1}
             >
-              <Text>coin</Text>
+              
             </Box>
           </Grid>
         </Box>

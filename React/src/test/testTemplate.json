@@ -1,0 +1,11 @@
+[
+    {
+        "market":"KRW-BTC",
+        "trade_date":"20220218",
+        "trade_time":"140112",
+        "trade_date_kst":"20220218",
+        "trade_time_kst":"230112",
+        "trade_timestamp":1645192872000,
+        "opening_price":49376000.0,
+        "high_price":50199000.0,
+        "low_price":48749000.0,"trade_price":49160000.0,"prev_closing_price":49376000.00000000,"change":"FALL","change_price":216000.00000000,"change_rate":0.0043745949,"signed_change_price":-216000.00000000,"signed_change_rate":-0.0043745949,"trade_volume":0.00988555,"acc_trade_price":182906209988.788750000,"acc_trade_price_24h":372878582245.59263000,"acc_trade_volume":3695.14348320,"acc_trade_volume_24h":7463.55518992,"highest_52_week_price":82700000.00000000,"highest_52_week_date":"2021-11-09","lowest_52_week_price":33900000.00000000,"lowest_52_week_date":"2021-06-22","timestamp":1645192872557}]
